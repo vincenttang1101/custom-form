@@ -35,7 +35,8 @@ main {
   width: 870px;
   margin: 60px auto 0;
   padding: 6px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 400px 1fr;
   border-radius: 10px;
   background: #fff;
 }
@@ -59,8 +60,6 @@ main {
 /* Contact info */
 .contact-info {
   position: relative;
-  flex-shrink: 0;
-  width: 330px;
   padding: 24px 30px 30px;
   border-radius: 10px;
   color: #fff;
@@ -144,17 +143,17 @@ main {
 /* Contact form */
 .contact-form {
   padding: 30px;
+  flex: 1;
 }
 
 .form-submit {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   row-gap: 34px;
 }
 
 .form-group {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
