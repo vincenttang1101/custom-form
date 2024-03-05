@@ -172,11 +172,21 @@
                 class="form-textarea"
                 id="form-textarea"
                 placeholder="Write your message.."
+                oninput="reSize(this)"
               ></textarea>
             </div>
+
+            <button type="submit" class="form-submit-btn">Send Message</button>
           </form>
         </div>
       </div>
     </main>
+    <script>
+      function reSize(e) {
+        e.style.height = "auto";
+        console.log(e.scrollHeight);
+        e.style.height = e.scrollHeight + 2 + "px";
+      }
+    </script>
   </body>
 </html>

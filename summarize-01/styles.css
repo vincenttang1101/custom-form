@@ -248,4 +248,24 @@ main {
 
 .form-textarea {
   resize: none;
+  max-height: 200px;
+}
+
+.form-group:nth-of-type(6) {
+  width: 100%;
+  flex-basis: auto;
+}
+
+.form-submit-btn {
+  margin-left: auto;
+  outline: none;
+  border: none;
+  width: 148px;
+  padding: 14px 30px;
+  background: #3e1f92;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  border-radius: 8px;
+  cursor: pointer;
 }
